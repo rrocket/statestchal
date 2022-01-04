@@ -120001,8 +120001,8 @@ let transations = [
   },
 ];
 
-export function getTransactions(rows = 100) {
-  return transations.slice(0, rows);
+export function getTransactions() {
+  return transations;
 }
 
 export function getTransaction(accountNumber) {
