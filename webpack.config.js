@@ -23,13 +23,14 @@ const config = {
           'style-loader',
           'css-loader'
         ]
-      }
-    ]
+      },
+    ],
   },
   devServer: {
     'static': {
       directory: './dist'
-    }
+    },
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({

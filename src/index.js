@@ -1,8 +1,16 @@
 import ReactDOM from "react-dom";
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import App from "./app";
+import Detail from "./detail";
+import './theme.css'
 
-const App = () => {
-  return <h1>This is my React app!</h1>;
-};
-
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="detail/:accountId" element={<Detail />} />
+    </Routes>
+  </BrowserRouter>,
+  document.getElementById("app")
+);
