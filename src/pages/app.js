@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
-import { getTransactions } from "./data";
-import TableFilterBlock from "./components/tableFilterBlock";
+import { getTransactions } from "../data/data";
+import TableFilterBlock from "../components/tableFilterBlock";
 import { NavLink } from "react-router-dom";
 export default function App() {
   let transactions = getTransactions();

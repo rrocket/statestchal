@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useParams } from "react-router-dom";
-import { getTransaction } from "./data";
+import { getTransaction } from "../data/data";
 export default function Detail() {
   let { accountId } = useParams();
   let transaction = getTransaction(accountId);

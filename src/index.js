@@ -1,8 +1,8 @@
 import ReactDOM from "react-dom";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import App from "./app";
-import Detail from "./detail";
+import App from "./pages/app";
+import Detail from "./pages/detail";
 import './theme.css'
 
 ReactDOM.render(
