@@ -5,8 +5,10 @@ you can run this on your local envrionment by first installing with npm (tested 
 npm install
 ```
 
-then running with
+then run with
 
 ```
 npm start
 ```
+
+app will be served at http://localhost:8080/
