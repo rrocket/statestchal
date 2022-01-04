@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./pages/app";
 import Detail from "./pages/detail";
-import './theme.css'
+import "./theme.css";
 
 ReactDOM.render(
   <BrowserRouter>
