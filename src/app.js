@@ -8,7 +8,7 @@ export default function App() {
 
   const filterOptionsAN = [
     "Savings Account",
-    "Checkings Account",
+    "Checking Account",
     "Auto Loan Account",
     "Credit Card Account",
     "Investment Account",
@@ -23,13 +23,13 @@ export default function App() {
     transactionType: [],
   });
 
-  let handleFilterChange = (checkedState, name) => {
-    if (name === "Account Name") {
+  let handleFilterChange = (checkedState, filterName) => {
+    if (filterName === "Account Name") {
       setFilterState({
         accountName: checkedState,
         transactionType: filterState.transactionType,
       });
-    } else if (name === "Transaction Type") {
+    } else if (filterName === "Transaction Type") {
       setFilterState({
         accountName: filterState.accountName,
         transactionType: checkedState,
@@ -81,6 +81,7 @@ export default function App() {
                   }
                   return anFilterBool && ttFilterBool;
                 })
+                .slice(0, 100)
                 .map((transaction) => {
                   return (
                     <tr key={transaction.account}>

@@ -5,6 +5,7 @@
 th {
   padding-top: 20px !important;
   text-align: left;
+  text-transform: capitalize;
 }
 
 th,
